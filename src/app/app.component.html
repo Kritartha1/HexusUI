@@ -1,14 +1,22 @@
-<div style="background-color: #1f1e21;height: 31px;"></div>
+<div class="fixed-top" style="background-color: #1f1e21;height: 31px;z-index: 1;"></div>
 <div class="" style="display: flex;">
-  <app-navbar class=" "></app-navbar>
-  <div class="col">
-    <nav style="    position: relative;
-    top: -10px;
+  <app-navbar class=" " ></app-navbar>
+  <div class="col ">
+    <nav class="fixed-top" style="    position: absolute;
+    top: 21px;
+    left: 100px;
     height: 49px;
+    box-shadow: 0 1px 6px #0000008a;
     background-color: #505959;
-    width: 100%;
+    z-index: 2;
     border-top-left-radius: 10px;"></nav>
-    <app-dummy ></app-dummy>
+    <app-dummy style="
+    position: relative;
+    background: #505959;
+    display: flex;
+    height: 100vh;
+    overflow-y: scroll;
+    "></app-dummy>
   </div>
  
 </div>
