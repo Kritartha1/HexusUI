@@ -4,16 +4,25 @@
 }
 
 .customScroll:hover{
+    
     /* overflow: visible; */
     overflow-y: scroll;
     scrollbar-color: #040404 #292a2b;
     scrollbar-width: thin;
 }
 
+    
+    
+
+/* .customScroll::-webkit-scrollbar{
+
+    width: 2px;
+} */
 .customScrollNav{
     overflow: hidden;
 
 }
+
 
 .customScrollNav:hover{
     /* overflow: visible; */
