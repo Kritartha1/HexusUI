@@ -10,9 +10,55 @@
     scrollbar-width: thin;
 }
 
-.topnav{
-    /* position: fixed; */
-    top: 0;
-    right: 0;
-    left: 0;
+.customScrollNav{
+    overflow: hidden;
+
 }
+
+.customScrollNav:hover{
+    /* overflow: visible; */
+    overflow-y:auto;
+    /* scrollbar-color: #040404 #292a2b;
+    scrollbar-width: thin; */
+}
+.customScrollNav:hover::-webkit-scrollbar{
+    display: none;
+}
+/* .customScrollNav::-webkit-scrollbar-thumb {
+    background: #FF0000;
+} */
+
+.sideIcons{
+    height: 55px;width: 55px;
+    background-color: #363b39;
+    color: white;
+    margin-top: 20px;
+    margin-inline: 5px;
+    padding-top: 14px;
+    text-align: center;
+    border-radius: 55px;
+    cursor: pointer;
+}
+
+.sideIcons:hover{
+    border-radius: 14px;
+    background-color: #4c65bf;
+}
+
+.c:hover{
+    background-color: white;
+}
+
+.plus{
+    font-size: xx-large;
+    padding: 0px;
+    color:#2db860;
+}
+
+.plus:hover{
+    color: white;
+    background-color: #2db860;
+}
+
+
+
