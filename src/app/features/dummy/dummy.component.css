@@ -43,7 +43,7 @@
     color: white;
     margin-top: 20px;
     margin-inline: 5px;
-    padding-top: 14px;
+    padding-top: 18px;
     text-align: center;
     border-radius: 55px;
     cursor: pointer;
@@ -60,7 +60,7 @@
 
 .plus{
     font-size: xx-large;
-    padding: 0px;
+    padding: 16px;
     color:#2db860;
 }
 
