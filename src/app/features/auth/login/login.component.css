@@ -1,4 +1,70 @@
 input{
-    background-color: #1e1d1d;
+    background-color: #232324f7;
     border: none;
+    border-radius: 3px;
+    color: #ffffff9e;
+    font-size: 15px;
+    
 }
+
+
+
+.customLabel{
+    font-size: 10px;
+    font-weight: bold;
+    color: #cbcbcbc7;
+}
+
+button{
+    background: #6471f5;
+    border: none;
+    margin-top: 14px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    FONT-WEIGHT: 405;
+    border-radius: 3px;
+}
+
+.asetrisk{
+    font-weight: 200;
+    color: #ed3a3a;
+}
+
+.forgot-password{
+    margin-top: 2px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #259caf;
+    cursor: pointer;
+    
+}
+.forgot-password:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.social{
+    color: darkgray;
+    font-size: smaller;
+}
+
+.register{
+    color: #2b9ca7;
+    font-weight: 500;
+    cursor: pointer;
+}
+.register:hover{
+    text-decoration: underline;
+}
+
+.form-control{
+    
+    background-color: #232324f7;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff9e;
+    box-shadow: none;
+}
+
+

@@ -10,13 +10,18 @@ import { DummyComponent } from './features/dummy/dummy.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './features/auth/login/login.component';
 import { HttpClientModule } from  '@angular/common/http';
+import { RegisterComponent } from './features/auth/register/register.component';
+import { DummynavComponent } from './features/misc/dummynav/dummynav.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     DummyComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
+    DummynavComponent
   ],
   imports: [
     BrowserModule,
