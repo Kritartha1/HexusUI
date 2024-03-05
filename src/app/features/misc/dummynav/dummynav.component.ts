@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./dummynav.component.css']
 })
 export class DummynavComponent {
+ 
 
 }
