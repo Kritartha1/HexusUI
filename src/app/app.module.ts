@@ -12,6 +12,7 @@ import { LoginComponent } from './features/auth/login/login.component';
 import { HttpClientModule } from  '@angular/common/http';
 import { RegisterComponent } from './features/auth/register/register.component';
 import { DummynavComponent } from './features/misc/dummynav/dummynav.component';
+import { HomeComponent } from './core/home/home.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { DummynavComponent } from './features/misc/dummynav/dummynav.component';
     DummyComponent,
     LoginComponent,
     RegisterComponent,
-    DummynavComponent
+    DummynavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,20 @@
 #collapsibleNavbar{
-    width: 200px;
+    height: 100vh;
+    width: 0px;
+    transition:0.3s  ease-in-out;
 
 }
+#collapsibleNavbar.show {
+    width: 200px;
+    right: 0; /* Visible when show class is added */
+}
 
+@media (max-width: 992px) {
+    .navbar.fixed-top {
+        position: sticky;
+        top: 0;
+        
+    }
+}
 
 
