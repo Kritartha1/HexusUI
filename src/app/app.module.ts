@@ -13,6 +13,7 @@ import { HttpClientModule } from  '@angular/common/http';
 import { RegisterComponent } from './features/auth/register/register.component';
 import { DummynavComponent } from './features/misc/dummynav/dummynav.component';
 import { HomeComponent } from './core/home/home.component';
+import { FooterComponent } from './core/footer/footer.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HomeComponent } from './core/home/home.component';
     LoginComponent,
     RegisterComponent,
     DummynavComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

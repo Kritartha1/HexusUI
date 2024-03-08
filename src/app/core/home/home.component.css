@@ -1,124 +1,83 @@
- 
- @media  (max-width: 479px){
-    .section-hero-imagine.home, .section-hero-imagine.home-2023 {
-        background-position: 150% 100%;
-        background-size: 110%;
-        padding-bottom: 180px;
-    }
-    ._2{
-        background-size: cover;
-    }
-
-    ._1{
-        display: none;
-    }
-  
-    
-}
-
-
-@media  (max-width: 767px){
-    .section-hero-imagine.home, .section-hero-imagine.home-2023,._2 {
-        background-position: -20% 100%;
-        background-size: 500px;
-        padding-top: 0;
-        padding-bottom: 200px;
-    }
-    .hero-home-image._2 {
-        max-width: 689px;
-        background-size: cover;
-        /* top: auto; */
-        /* bottom: 0%;
-        left: -448px;
-        right: 0; */
-    
-       
-            bottom: 0%;
-            left: 64px;
-            right: 0;
-            width: 80%;
-        
-    } 
-    ._1{
-        display: none;
-    }
-   
-}
-
-
-@media (max-width: 991px){
-
-    .section-hero-imagine.home-2023,._2 {
-        background-image: url(https://assets-global.website-files.com/6257ade…/644fab4…_8a8375a….svg);
-        background-position: 25% 100%;
-        background-repeat: no-repeat;
-        background-size: 600px;
-        padding-top: 0;
-        padding-bottom: 240px;
-    }
-    ._1{
-        display: none;
-    }
-}
-
-
-.section-hero-imagine.home-2023 {
-    min-height: auto;
-    background-image: url(https://assets-global.website-files.com/6257ade…/644fab4…_8a8375a….svg), url(https://assets-global.website-files.com/6257ade…/644fab4…_c40c84c….svg), url(https://assets-global.website-files.com/6257ade…/644fab4…_e6d5771….svg);
-    background-position: -50% 100%, 150% 100%, 50% 100%;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 52%, 52%, auto;
-    padding-top: 0;
-}
-
-@media (max-width: 991px){
-    .section-hero-imagine {
-        min-height: 640px;
-        background-position: 0 100%, 100% 100%, 50% 100%;
-        background-size: auto 24vw, auto 24vw, auto;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-}
-
-
-.section-hero-imagine {
-    min-height: 760px;
-    background-color: #404eed;
-    background-image: url(https://assets-global.website-files.com/6257ade…/644fab4…_8a8375a….svg), url(https://assets-global.website-files.com/6257ade…/644fab4…_c40c84c….svg), url(https://assets-global.website-files.com/6257ade…/644fab4…_e6d5771….svg);
-    background-position: -50% 100%, 150% 100%, 50% 100%;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: auto, auto, auto;
-    padding-top: 210px;
-}
-
-.hero-home-image {
-    /* display: none; */
-    position: absolute;
-    top: 9px;
-    bottom: auto;
-    left: auto;
-    right: -18%;
-}
-.hero-home-image._2 {
-    max-width: 689px;
-    /* top: auto; */
-    /* bottom: 0%;
-    left: -448px;
-    right: 0; */
-
-   
-        bottom: 0%;
-        left: 64px;
-        right: 0;
-        width: 68%;
-    
-} 
-
-
-img {
+.hero-home-image{
     max-width: 100%;
-    vertical-align: middle;
-    border: 0;
+    right: 0;
+    position: absolute;
+    background-size: cover;
 }
- 
+
+/* .section-grey-120px.white-bg {
+    background-color: #fff;
+    padding-bottom: 130px;
+}
+@media screen and (max-width: 991px){
+.section-grey-120px {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+}
+
+.section-grey-120px {
+    background-color: #f6f6f6;
+    padding-top: 120px;
+    padding-bottom: 120px;
+} */
+
+
+.custom-flex{
+    display: flex;
+}
+
+.custom-flex-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.custom-width{
+    max-width: 30%;
+}
+@media screen and (min-width: 991px){
+    .banner-img{
+        max-width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 991px){
+    .custom-flex,.custom-flex-2 {
+        align-items: center;
+        
+        flex-direction: column;
+    }
+    .custom-width{
+        max-width: 100%;
+    }
+    .custom-font-h3{
+        font-size: 20px!important;
+    }
+    .custom-font-h1{
+        font-size: 15px!important;
+    }
+    .banner-img{
+        display: inline-block;
+        max-width: 100%;
+    }
+}
+
+
+
+.custom-font-h3{
+    line-height: normal;
+    font-size: 40px;
+}
+.custom-font-h1{
+    color: #4b5257;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.banner-img:hover{
+    /* transform: scale(1.1); */
+}
+
+
