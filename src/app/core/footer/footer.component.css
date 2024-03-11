@@ -11,6 +11,8 @@
         flex-direction: row;
         /* flex-wrap: wrap; */
     }
+   
+    
 
     /* .custom-div2{
         margin-left: 31%;
@@ -44,6 +46,10 @@
     }
 }
 
+
+    
+
+
 .custom-next{
     max-width: 100%;
     min-width: 50%;
@@ -51,9 +57,25 @@
 }
 
 @media (min-width:500px) {
+    
     .custom-div{
         justify-content: space-around;
     }
     
+    
+}
+@media (min-width:745px){
+    .custom-div._2{
+        margin-left: 12%!important;
+    }
+}
+
+.image{
+    max-width: 24px;
+    min-width: 24px;
+    color: var(--blurple);
+    -webkit-text-fill-color: inherit;
+    mix-blend-mode: normal;
+    background-clip: padding-box;
 }
 
