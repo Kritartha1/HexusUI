@@ -2,6 +2,58 @@
     background-color: #23272a;
     padding-top: 80px;
     padding-bottom: 64px;
-    position: relative;
-    overflow: visible;
+    /* position: relative;
+    overflow: visible; */
 }
+@media (min-width:500px){
+    .custom-new{
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+    }
+
+    /* .custom-div2{
+        margin-left: 31%;
+    } */
+}
+
+.custom-new{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+    .custom-new{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .custom-div{
+        justify-content: space-between!important;
+    }
+
+}
+
+@media (max-width:745px){
+    .custom-next{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.custom-next{
+    max-width: 100%;
+    min-width: 50%;
+    justify-content: space-evenly;
+}
+
+@media (min-width:500px) {
+    .custom-div{
+        justify-content: space-around;
+    }
+    
+}
+

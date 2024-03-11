@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hexus';
+  showNavbar: boolean=true;
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        // Check the current route and decide whether to show the navbar
+        if (event.url === '/login' || event.url === '/register'||event.url=='/hexus') {
+          this.showNavbar = false;
+        } else {
+          this.showNavbar = true;
+        }
+      }
+    });
+  }
 }

@@ -14,6 +14,7 @@ import { RegisterComponent } from './features/auth/register/register.component';
 import { DummynavComponent } from './features/misc/dummynav/dummynav.component';
 import { HomeComponent } from './core/home/home.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { HexusPageComponent } from './features/hexus-page/hexus-page.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { FooterComponent } from './core/footer/footer.component';
     RegisterComponent,
     DummynavComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    HexusPageComponent
   ],
   imports: [
     BrowserModule,

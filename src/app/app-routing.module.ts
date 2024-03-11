@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './features/auth/login/login.component';
 import { RegisterComponent } from './features/auth/register/register.component';
 import { DummynavComponent } from './features/misc/dummynav/dummynav.component';
+import { HomeComponent } from './core/home/home.component';
+import { DummyComponent } from './features/dummy/dummy.component';
+import { HexusPageComponent } from './features/hexus-page/hexus-page.component';
 
 const routes: Routes = [
 
@@ -16,7 +19,10 @@ const routes: Routes = [
   },
   {
     path:'',
-    component:DummynavComponent
+    component:HomeComponent
+  },{
+    path:'hexus',
+    component:HexusPageComponent
   }
 ];
 
