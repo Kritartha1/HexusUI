@@ -122,7 +122,9 @@
         font-size: 17px;
     }
     .home{
-       
+        
+            height: 100% !important;
+        
             margin-top: 0px;
             
             
@@ -135,13 +137,23 @@
         max-width: 60%;
         /* padding-inline: 100px; */
     }
-    ._hero1{
+    
+    ._hero1,._hero2{
         margin-bottom: 20px;
+        font-size: 100% !important;
+        overflow-wrap: break-word;
+    }
+    
+    .hero-text{
+        margin-top: 100%;
     }
 }
 @media (max-width:991px) {
     .home{
-        height: 900px!important;
+        height: 100%!important;
+    }
+    .hero-text{
+        margin-top: 100%;
     }
     
 }
