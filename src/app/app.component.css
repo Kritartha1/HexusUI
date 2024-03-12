@@ -4,3 +4,9 @@
     right: 0;
     left: 0;
 }
+
+@media (min-width:768px) {
+    .fixed-top{
+        position: relative;
+    }
+}

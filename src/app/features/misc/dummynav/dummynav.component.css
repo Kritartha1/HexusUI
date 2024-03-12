@@ -15,7 +15,25 @@
         top: 0;
         
     }
+
 }
+
+@media (min-width: 768px){
+.navbar-expand-md .navbar-nav {
+    
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+}
+
+/* @media (max-width:767px) {
+    .navbar{
+        position: sticky;
+        
+    }
+    
+} */
 
 .navbar-toggler:focus{
     box-shadow: none;
