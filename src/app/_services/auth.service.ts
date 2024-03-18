@@ -8,6 +8,8 @@ import { LoginResponse } from '../models/login-response';
 import { environment } from 'src/environments/environment';
 import { TokenResponse } from '../models/token-response';
 import { AuthUser } from '../models/AuthUser';
+import { SignupRequest } from '../models/register-request';
+import { SignupResponse } from '../models/register-response';
 
 @Injectable({
   providedIn: 'root'
@@ -27,13 +29,13 @@ export class AuthService {
     });
   }
 
-  // register(request:SignupRequest):Observable<SignupResponse>{
-  //   return this.http.post<SignupResponse>(`${environment.apiBaseUrl}/api/Auth/Register`, {
-  //     username: request.username,
-  //     password: request.password,
-  //     roles:request.roles
-  //   });
-  // }
+  register(request:SignupRequest):Observable<SignupResponse>{
+    return this.http.post<SignupResponse>(`${environment.apiBaseUrl}/api/Auth/Register`, {
+      username: request.username,
+      password: request.password,
+      roles:request.roles
+    });
+  }
 
   getUserById(id: string): Observable<AuthUser> {
     return this.http.get<AuthUser>(`${environment.apiBaseUrl}/api/Auth/${id}`)

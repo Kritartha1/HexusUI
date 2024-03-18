@@ -18,12 +18,12 @@ export class PresenceService {
     
     this.hubConnection=new HubConnectionBuilder()
     .withUrl(this.hubUrl+'presence',{
-      accessTokenFactory:()=>user.token
+      accessTokenFactory:()=>user.token.split(' ')[1]
     })
     .withAutomaticReconnect()
     .build();
 
-    this.hubConnection.start().catch(err=>console.log(err));
+    this.hubConnection.start().catch(err=>console.log("haha    "+err));
 
     this.hubConnection.on('UserIsOnline',username=>{
       console.log(`${username} has connected`)

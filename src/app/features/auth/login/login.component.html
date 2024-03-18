@@ -1,8 +1,8 @@
-<div class="hh" style="background-image: url('https://images.alphacoders.com/129/1291249.png');height: 100%;background-size: cover;display: flex;justify-content: center;align-items: center;">
+<div class="hh" style="overflow: scroll;background-image: url('https://images.alphacoders.com/129/1291249.png');height: 100%;background-size: cover;display: flex;justify-content: center;align-items: center;">
     
     
        
-        <form class="container py-4 "  #form="ngForm" style="padding-inline: 23px;color: white;width:428px;border-radius: 4px;background-color: #39393d;justify-content: center;align-items: center;">
+        <form class="container py-4 m-auto"  #form="ngForm" (ngSubmit)="onFormSubmit()" style="padding-inline: 23px;color: white;width:428px;border-radius: 4px;background-color: #39393d;justify-content: center;align-items: center;">
     
             
            <div class="d-flex-col justify-content-center align-items-center " style="margin-top: 5px;;margin-inline: auto;width: fit-content;">
@@ -25,23 +25,42 @@
             class="form-control mt-1 " 
             name="username" 
             id="username" 
-           
+            [(ngModel)]="model.email"
             required
+            (focus)="showEmailErr = true" 
+            (blur)="showEmailErr = false" 
+           
+            
            
             >
-    
+
+            <div  *ngIf="showEmailErr && form.controls['username']!.invalid && (form.controls['username']!.dirty || form.controls['username']!.touched)">
+                <div class="field-err" *ngIf="form.controls['username']!.errors?.required">*Email is required.</div>
+            </div>
+            
            
     
             <label for="password" class="customLabel mt-3">PASSWORD <span class="asetrisk">*</span></label>
     
                 <input 
-                type="password"
+                [type]="passwordInputType"
+               
                 class="form-control mt-1" 
                 name="password" 
-                id="password"  
-                
+                id="password" 
+                [(ngModel)]="model.password"
+                (focus)="showPassErr = true" 
+                (blur)="showPassErr = false"
+
                 required
                 >
+            <div *ngIf="showPassErr && form.controls['password']!.invalid && (form.controls['password']!.dirty || form.controls['password']!.touched)">
+                    <div  class="field-err " *ngIf="form.controls['password']!.errors?.required">*Password is required.</div>
+                    <!-- errbox -->
+            </div>
+                
+
+                
                
             
 
@@ -54,7 +73,7 @@
            
     
             <div class="d-flex justify-content-center">
-                <button type="submit" >Log In</button>
+                <button type="submit"  >Log In</button>
                 <!-- <span *ngIf="clicked" class="loader" style="z-index: 50;"></span> -->
             </div>
             

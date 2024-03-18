@@ -115,3 +115,26 @@
     text-align: center;
     z-index: 90;
   } */
+
+  .div-card{
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-inline: auto;
+    padding: 13px;
+    height:100%;
+    width: 96%;
+    background-color: #b5b2b22a;
+    position: relative;
+    display: flex;
+  }
+
+  .dm{
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    margin-inline: auto;
+    padding: 13px;
+    font-weight: 500;
+    color: #878080;
+    font-size: 11px;
+  }

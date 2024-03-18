@@ -15,6 +15,7 @@ import { DummynavComponent } from './features/misc/dummynav/dummynav.component';
 import { HomeComponent } from './core/home/home.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HexusPageComponent } from './features/hexus-page/hexus-page.component';
+import { NgToastModule } from 'ng-angular-popup';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { HexusPageComponent } from './features/hexus-page/hexus-page.component';
     BrowserAnimationsModule,
     HttpClientModule ,
     FormsModule,
+    NgToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]
