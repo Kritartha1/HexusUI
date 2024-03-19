@@ -6,6 +6,7 @@ import { DummynavComponent } from './features/misc/dummynav/dummynav.component';
 import { HomeComponent } from './core/home/home.component';
 import { DummyComponent } from './features/dummy/dummy.component';
 import { HexusPageComponent } from './features/hexus-page/hexus-page.component';
+import { DmScreenComponent } from './features/chat/dm-screen/dm-screen.component';
 
 const routes: Routes = [
 
@@ -26,7 +27,7 @@ const routes: Routes = [
     children:[
       {
         path:'a',
-        component:LoginComponent
+        component:DmScreenComponent
       }
     ]
   }

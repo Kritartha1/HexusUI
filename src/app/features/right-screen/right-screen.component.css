@@ -1,8 +1,8 @@
 @import url('../dummy/dummy.component.css');
 
 .top-div{
-    border-bottom-color: #181717 !important;
-    border-bottom: solid thin;
+    /* border-bottom-color: #181717 !important;
+    border-bottom: solid thin; */
     z-index: 1;
     background-color: #292a2b;
     height: 54px;
@@ -21,6 +21,11 @@
     border: none;
 }
 
+.top-div-input:focus-visible{
+    outline: none;
+    color: white;
+}
+
 .customScroll.posHeight{
     position: relative;
     top: -4px;
@@ -29,3 +34,8 @@
     background: #292a2b;
     height: 100vh;
 }
+
+.name-faded:hover{
+    color: white;
+}
+

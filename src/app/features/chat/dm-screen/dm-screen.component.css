@@ -1,0 +1,12 @@
+.top-div{
+    /* border-bottom-color: #181717 !important;
+    border-bottom: solid thin; */
+    z-index: 1;
+    background-color: #35383b;
+    height: 54px;
+    position: relative;
+    top: -4px;
+    /* display: flex; */
+    display:inline-flex;
+
+}

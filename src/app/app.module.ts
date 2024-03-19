@@ -18,6 +18,7 @@ import { HexusPageComponent } from './features/hexus-page/hexus-page.component';
 import { NgToastModule } from 'ng-angular-popup';
 import { CopyDummyComponent } from './features/copy-dummy/copy-dummy.component';
 import { RightScreenComponent } from './features/right-screen/right-screen.component';
+import { DmScreenComponent } from './features/chat/dm-screen/dm-screen.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { RightScreenComponent } from './features/right-screen/right-screen.compo
     FooterComponent,
     HexusPageComponent,
     CopyDummyComponent,
-    RightScreenComponent
+    RightScreenComponent,
+    DmScreenComponent
   ],
   imports: [
     BrowserModule,
