@@ -22,7 +22,13 @@ const routes: Routes = [
     component:HomeComponent
   },{
     path:'hexus',
-    component:HexusPageComponent
+    component:HexusPageComponent,
+    children:[
+      {
+        path:'a',
+        component:LoginComponent
+      }
+    ]
   }
 ];
 

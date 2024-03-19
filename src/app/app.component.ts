@@ -13,7 +13,7 @@ export class AppComponent {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         // Check the current route and decide whether to show the navbar
-        if (event.url === '/login' || event.url === '/register'||event.url=='/hexus') {
+        if (event.url === '/login' || event.url === '/register'||event.url.startsWith('/hexus')) {
           this.showNavbar = false;
         } else {
           this.showNavbar = true;

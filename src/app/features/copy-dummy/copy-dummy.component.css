@@ -11,7 +11,13 @@
     scrollbar-width: thin;
 }
 
+    
+    
 
+/* .customScroll::-webkit-scrollbar{
+
+    width: 2px;
+} */
 .customScrollNav{
     overflow: hidden;
 
@@ -62,8 +68,67 @@
     color: white;
     background-color: #2db860;
 }
+/* 
+.tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 90;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    background-color: #192733;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+  }
+  
+  .hover-text:hover .tooltip-text {
+    visibility: visible;
+    z-index: 90;
+  }
+  
+  #top {
+    top: -40px;
+    left: -50%;
+  }
+  
+  #bottom {
+    top: 25px;
+    left: -50%;
+  }
+  
+  #left {
+    top: -8px;
+    right: 120%;
+  }
+  
+  #right {
+    z-index: 90;
+    top: -8px;
+    left: 120%;
+  }
+  
+  .hover-text {
+    position: relative;
+    display: inline-block;
+    margin: 40px;
+    font-family: Arial;
+    text-align: center;
+    z-index: 90;
+  } */
 
+  /* .div-card{
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-inline: auto;
+    padding: 13px;
+    height:100%;
+    width: 96%;
+    background-color: #b5b2b22a;
+    position: relative;
+    display: flex;
 
+   
+  } */
   .div-card{
     border-radius: 5px;
     margin-top: -5px;

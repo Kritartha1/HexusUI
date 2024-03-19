@@ -16,6 +16,8 @@ import { HomeComponent } from './core/home/home.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HexusPageComponent } from './features/hexus-page/hexus-page.component';
 import { NgToastModule } from 'ng-angular-popup';
+import { CopyDummyComponent } from './features/copy-dummy/copy-dummy.component';
+import { RightScreenComponent } from './features/right-screen/right-screen.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { NgToastModule } from 'ng-angular-popup';
     DummynavComponent,
     HomeComponent,
     FooterComponent,
-    HexusPageComponent
+    HexusPageComponent,
+    CopyDummyComponent,
+    RightScreenComponent
   ],
   imports: [
     BrowserModule,
