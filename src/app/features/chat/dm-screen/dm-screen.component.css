@@ -8,5 +8,59 @@
     top: -4px;
     /* display: flex; */
     display:inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 
 }
+
+.div-card{
+    border-radius: 5px;
+    margin-top: 0px;
+    padding: 13px;
+    height: 100%;
+    width: 124px;
+    position: relative;
+    display: flex;
+    background: transparent;
+    cursor: pointer;
+    justify-content: space-around;
+   
+    
+  }
+
+  .div-svg{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+  }
+
+  .inner-svg{
+    top: 18px;
+    left: 18px;
+    position: absolute;
+    fill: #000000;
+  }
+
+  .name-faded{
+    font-weight: 400;
+    font-size: 14px;
+    padding: 6px;
+    color: #ffffff;
+  }
+  .big-svg{
+    border-radius: 44px;
+    background: #E346C2;
+    padding: 14px;
+    height: 80px;
+    width: 80px;
+    margin: 15px;
+  }
+
+  .big-name-faded{
+    font-weight: 700;
+    margin-left: 15px;
+    font-size: 31px;
+    font-family: sans-serif;
+    color: white;
+  }

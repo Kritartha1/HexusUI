@@ -19,6 +19,7 @@ import { NgToastModule } from 'ng-angular-popup';
 import { CopyDummyComponent } from './features/copy-dummy/copy-dummy.component';
 import { RightScreenComponent } from './features/right-screen/right-screen.component';
 import { DmScreenComponent } from './features/chat/dm-screen/dm-screen.component';
+import { TextMssgComponent } from './features/chat/text-mssg/text-mssg.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { DmScreenComponent } from './features/chat/dm-screen/dm-screen.component
     HexusPageComponent,
     CopyDummyComponent,
     RightScreenComponent,
-    DmScreenComponent
+    DmScreenComponent,
+    TextMssgComponent
   ],
   imports: [
     BrowserModule,
