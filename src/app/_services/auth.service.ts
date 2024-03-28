@@ -15,12 +15,15 @@ import { SignupResponse } from '../models/register-response';
   providedIn: 'root'
 })
 export class AuthService {
+  
 
   $user = new BehaviorSubject<AuthUser | undefined>(undefined);
 
   constructor(private http: HttpClient, private cookieService: CookieService) {
 
    }
+
+   
 
    login(request: LoginRequest): Observable<LoginResponse> {
     return this.http.post<LoginResponse>(`${environment.apiBaseUrl}/api/Auth/Login`, {

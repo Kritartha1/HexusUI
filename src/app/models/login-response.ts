@@ -4,5 +4,4 @@ export interface LoginResponse {
     id: string;
     jwtToken: string;
 
-
 }

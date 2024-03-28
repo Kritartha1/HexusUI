@@ -44,6 +44,8 @@ export class LoginComponent {
 
 
     onFormSubmit(): void {
+
+      console.log(this.model);
       
       this.clicked=true;
 
